@@ -1,0 +1,59 @@
+2026-09-16 09:48:56.136 +03:00 [INF] User profile is available. Using 'C:\Users\Pro\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-16 09:48:56.996 +03:00 [INF] Now listening on: http://127.0.0.1:5005
+2026-09-16 09:48:57.598 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-16 09:48:57.601 +03:00 [INF] Hosting environment: Development
+2026-09-16 09:48:57.604 +03:00 [INF] Content root path: D:\horizen\localService\Printer_POS_Local_App\Printer_POS_Local_App
+2026-09-16 09:48:58.418 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/ - null null
+2026-09-16 09:48:59.017 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/ - 404 0 null 594.1289ms
+2026-09-16 09:48:59.049 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5005/, Response status code: 404
+2026-09-16 09:49:08.626 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/swagger/index.html - null null
+2026-09-16 09:49:08.732 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/swagger/index.html - 200 null text/html;charset=utf-8 106.3723ms
+2026-09-16 09:49:08.754 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/_framework/aspnetcore-browser-refresh.js - null null
+2026-09-16 09:49:08.757 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/_vs/browserLink - null null
+2026-09-16 09:49:08.763 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/_framework/aspnetcore-browser-refresh.js - 200 16527 application/javascript; charset=utf-8 9.5578ms
+2026-09-16 09:49:08.801 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.0554ms
+2026-09-16 09:49:08.866 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5005/swagger/v1/swagger.json - null null
+2026-09-16 09:49:08.917 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5005/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 50.9953ms
+2026-09-16 09:49:35.308 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5005/api/POS/payment - application/json-patch+json 37
+2026-09-16 09:49:35.315 +03:00 [INF] CORS policy execution successful.
+2026-09-16 09:49:35.330 +03:00 [INF] Executing endpoint 'Printer_POS_Local_App.Controllers.POSController.Payment (Printer_POS_Local_App)'
+2026-09-16 09:49:35.372 +03:00 [INF] Route matched with {action = "Payment", controller = "POS"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Payment(Printer_POS_Local_App.Models.POS.PosPaymentRequest) on controller Printer_POS_Local_App.Controllers.POSController (Printer_POS_Local_App).
+2026-09-16 09:49:38.045 +03:00 [INF] POS Port Opened : COM4
+2026-09-16 09:49:40.091 +03:00 [INF] POS CONFIG: Port=COM4, Baud=9600, DataBits=8, Parity="None", StopBits="One", Handshake="None", Dtr=false, Rts=false, Encoding=us-ascii, CodePage=20127
+2026-09-16 09:49:40.754 +03:00 [INF] ========== POS REQUEST ==========
+2026-09-16 09:49:40.766 +03:00 [INF] <CONNTOPOS><ConnTest>800</ConnTest></CONNTOPOS>
+2026-09-16 09:49:40.768 +03:00 [INF] POS SEND TEXT: <CONNTOPOS><ConnTest>800</ConnTest></CONNTOPOS>
+2026-09-16 09:49:40.769 +03:00 [INF] POS SEND HEX: 3C-43-4F-4E-4E-54-4F-50-4F-53-3E-3C-43-6F-6E-6E-54-65-73-74-3E-38-30-30-3C-2F-43-6F-6E-6E-54-65-73-74-3E-3C-2F-43-4F-4E-4E-54-4F-50-4F-53-3E
+2026-09-16 09:49:40.770 +03:00 [INF] POS BEFORE WRITE: Open=true, Encoding=us-ascii, BytesToRead=0
+2026-09-16 09:49:40.774 +03:00 [INF] POS AFTER WRITE: Open=true, BytesToRead=0
+2026-09-16 09:49:42.035 +03:00 [INF] ==========start count ==========
+2026-09-16 09:49:42.039 +03:00 [INF] POS Received Chunk: <CONNFROMPOS><Date>16/09/2026</Date><Time>09:49:41</Time></CONNFROMPOS>
+2026-09-16 09:49:42.041 +03:00 [INF] ========== POS RESPONSE ==========
+2026-09-16 09:49:42.041 +03:00 [INF] <CONNFROMPOS><Date>16/09/2026</Date><Time>09:49:41</Time></CONNFROMPOS>
+2026-09-16 09:49:44.056 +03:00 [INF] ========== POS REQUEST ==========
+2026-09-16 09:49:44.057 +03:00 [INF] <TOPOS><TrxType>00</TrxType><Amount>1000</Amount><RefNum></RefNum><RcptNum></RcptNum></TOPOS>
+2026-09-16 09:49:44.058 +03:00 [INF] POS SEND TEXT: <TOPOS><TrxType>00</TrxType><Amount>1000</Amount><RefNum></RefNum><RcptNum></RcptNum></TOPOS>
+2026-09-16 09:49:44.060 +03:00 [INF] POS SEND HEX: 3C-54-4F-50-4F-53-3E-3C-54-72-78-54-79-70-65-3E-30-30-3C-2F-54-72-78-54-79-70-65-3E-3C-41-6D-6F-75-6E-74-3E-31-30-30-30-3C-2F-41-6D-6F-75-6E-74-3E-3C-52-65-66-4E-75-6D-3E-3C-2F-52-65-66-4E-75-6D-3E-3C-52-63-70-74-4E-75-6D-3E-3C-2F-52-63-70-74-4E-75-6D-3E-3C-2F-54-4F-50-4F-53-3E
+2026-09-16 09:49:44.062 +03:00 [INF] POS BEFORE WRITE: Open=true, Encoding=us-ascii, BytesToRead=0
+2026-09-16 09:49:44.064 +03:00 [INF] POS AFTER WRITE: Open=true, BytesToRead=0
+2026-09-16 09:49:50.725 +03:00 [INF] ==========start count ==========
+2026-09-16 09:49:51.344 +03:00 [INF] After connection test: IsOpen=true, BytesToRead=0
+2026-09-16 09:49:51.961 +03:00 [INF] After connection test: IsOpen=true, BytesToRead=0
+2026-09-16 09:49:52.573 +03:00 [INF] After connection test: IsOpen=true, BytesToRead=0
+2026-09-16 09:49:53.194 +03:00 [INF] After connection test: IsOpen=true, BytesToRead=0
+2026-09-16 09:49:53.808 +03:00 [INF] After connection test: IsOpen=true, BytesToRead=0
+2026-09-16 09:49:54.428 +03:00 [INF] After connection test: IsOpen=true, BytesToRead=0
+2026-09-16 09:49:55.042 +03:00 [INF] After connection test: IsOpen=true, BytesToRead=0
+2026-09-16 09:49:55.665 +03:00 [INF] After connection test: IsOpen=true, BytesToRead=0
+2026-09-16 09:49:56.285 +03:00 [INF] After connection test: IsOpen=true, BytesToRead=0
+2026-09-16 09:49:56.893 +03:00 [INF] After connection test: IsOpen=true, BytesToRead=0
+2026-09-16 09:49:57.505 +03:00 [INF] After connection test: IsOpen=true, BytesToRead=0
+2026-09-16 09:49:58.120 +03:00 [INF] After connection test: IsOpen=true, BytesToRead=0
+2026-09-16 09:49:58.733 +03:00 [INF] After connection test: IsOpen=true, BytesToRead=0
+2026-09-16 09:49:59.436 +03:00 [INF] After connection test: IsOpen=true, BytesToRead=0
+2026-09-16 09:50:00.061 +03:00 [INF] After connection test: IsOpen=true, BytesToRead=0
+2026-09-16 09:50:00.682 +03:00 [INF] After connection test: IsOpen=true, BytesToRead=0
+2026-09-16 09:50:01.306 +03:00 [INF] After connection test: IsOpen=true, BytesToRead=0
+2026-09-16 09:50:01.929 +03:00 [INF] After connection test: IsOpen=true, BytesToRead=0
+2026-09-16 09:50:02.540 +03:00 [INF] After connection test: IsOpen=true, BytesToRead=0
+2026-09-16 09:50:03.150 +03:00 [INF] After connection test: IsOpen=true, BytesToRead=0

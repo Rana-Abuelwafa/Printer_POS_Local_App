@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Printer_POS_Local_App</name>
+    </assembly>
+    <members>
+        <member name="M:Printer_POS_Local_App.Controllers.PrinterController.Print(ITravel_App.Models.BookingTicketDto)">
+             <summary>
+             Print booking ticket.
+             </summary>
+             <param name="ticket">Booking ticket information.</param>
+             <returns>Success response.</returns>
+             /// <remarks>
+             Sample request:
+            
+             POS /api/PrintTicket
+            
+             </remarks>
+             <response code="200">Success response.</response>
+        </member>
+    </members>
+</doc>

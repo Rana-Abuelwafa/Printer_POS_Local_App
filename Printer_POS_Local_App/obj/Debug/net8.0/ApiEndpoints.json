@@ -1,0 +1,54 @@
+[
+  {
+    "ContainingType": "Printer_POS_Local_App.Controllers.POSController",
+    "Method": "Payment",
+    "RelativePath": "api/POS/payment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Printer_POS_Local_App.Models.POS.PosPaymentRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Printer_POS_Local_App.Controllers.POSController",
+    "Method": "Ports",
+    "RelativePath": "api/POS/ports",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Printer_POS_Local_App.Controllers.POSController",
+    "Method": "ScanPorts",
+    "RelativePath": "api/POS/scan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Printer_POS_Local_App.Controllers.PrinterController",
+    "Method": "Print",
+    "RelativePath": "api/Printer/PrintTicket",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ticket",
+        "Type": "ITravel_App.Models.BookingTicketDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
